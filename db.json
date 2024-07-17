@@ -1,0 +1,125 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Ram",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "name": "Shayam",
+      "password": "123456"
+    },
+    {
+      "id": "3",
+      "name": "Karan",
+      "password": "123456"
+    },
+    {
+      "id": "4",
+      "name": "Rohan",
+      "password": "123456"
+    },
+    {
+      "id": "f0919148-b39e-4bb7-83ff-2d641a390416",
+      "name": "Ashish",
+      "password": "Ashish123"
+    }
+  ],
+  "products": [
+    {
+      "ownerId": "1",
+      "id": "1",
+      "image": "https://picsum.photos/400",
+      "productName": "Calender",
+      "price": "1000",
+      "description": "this is a Calender",
+      "categoryId": "others"
+    },
+    {
+      "ownerId": "1",
+      "id": "2",
+      "image": "https://picsum.photos/400",
+      "productName": "laptop",
+      "price": "1000",
+      "description": "this is a laptop",
+      "categoryId": "electronics"
+    },
+    {
+      "ownerId": "3",
+      "id": "3",
+      "image": "https://picsum.photos/400",
+      "productName": "mop",
+      "price": "1000",
+      "description": "this is a mop",
+      "categoryId": "utility"
+    },
+    {
+      "ownerId": "2",
+      "id": "4",
+      "image": "https://picsum.photos/400",
+      "productName": "blanket",
+      "price": "1000",
+      "description": "this is a blanket",
+      "categoryId": "comfort"
+    },
+    {
+      "ownerId": "4",
+      "id": "5",
+      "image": "https://picsum.photos/400",
+      "productName": "BIG balls",
+      "price": "1000",
+      "description": "this is a BIG balls",
+      "categoryId": "sports"
+    },
+    {
+      "ownerId": "4",
+      "id": "6",
+      "image": "https://picsum.photos/400",
+      "productName": "football",
+      "price": "1000",
+      "description": "this is a football",
+      "categoryId": "sports"
+    },
+    {
+      "ownerId": "4",
+      "id": "7",
+      "image": "https://picsum.photos/400",
+      "productName": "pillows",
+      "price": "1000",
+      "description": "this is a pillows",
+      "categoryId": "comfort"
+    },
+    {
+      "ownerId": "4",
+      "id": "8",
+      "image": "https://picsum.photos/400",
+      "productName": "Curtains",
+      "price": "1000",
+      "description": "this is a Curtains",
+      "categoryId": "utility"
+    }
+  ],
+  "categories": [
+    {
+      "id": "electronics",
+      "name": "electronics"
+    },
+    {
+      "id": "sports",
+      "name": "sports"
+    },
+    {
+      "id": "comfort",
+      "name": "comfort"
+    },
+    {
+      "id": "utility",
+      "name": "utility"
+    },
+    {
+      "id": "others",
+      "name": "others"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<form class="signupContainer" (ngSubmit)="onSignup()">
+  <div class="signup">
+    <div class="logoSection">
+      <div class="logo">
+        <img src="assets/avatar.png" alt="logo" />
+      </div>
+      <h1>Sign Up!</h1>
+    </div>
+    <input name="name" type="text" placeholder="Username" [(ngModel)]="name" />
+    <input
+      type="password"
+      placeholder="Password"
+      name="password"
+      [(ngModel)]="password"
+    />
+    <button>Sign Up</button>
+    <a routerLink="/signin">Already have an account? Sign in</a>
+  </div>
+</form>

@@ -1,0 +1,11 @@
+<section class="headerContainer">
+  <div class="header">
+    <h1>{{ title }}</h1>
+    @if (showLogout){
+    <div class="details">
+      <p>Hey, {{ userName }}</p>
+      <button class="logout" (click)="onLogout()">Logout</button>
+    </div>
+    }
+  </div>
+</section>

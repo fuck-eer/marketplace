@@ -1,0 +1,12 @@
+<div class="product">
+  <div class="image">
+    <img src="{{ img }}" alt="product" />
+  </div>
+  <div class="name">
+    <h2>{{ productName }}</h2>
+    <p [ngClass]="categoryClass">{{ category }}</p>
+  </div>
+  <p>{{ description }}</p>
+  <p>${{ price }}</p>
+  <button>Buy</button>
+</div>

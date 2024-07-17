@@ -1,0 +1,30 @@
+.productsContainer {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  justify-content: start;
+  padding: 0px 20px;
+  gap: 20px;
+  color: var(--text);
+}
+
+.cta {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+.categories {
+  display: flex;
+  color: var(--text);
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}

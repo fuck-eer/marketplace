@@ -1,0 +1,23 @@
+<div class="productsContainer">
+  <div class="cta">
+    <div>
+      <p>All Products</p>
+    </div>
+    <div class="categories">
+      @for(category of categories; track category.id) {
+      <p>{{ category.name }}</p>
+      }
+    </div>
+  </div>
+  <div class="products">
+    @for (item of items; track item.id) {
+    <app-product
+      [productName]="item.productName"
+      [description]="item.description"
+      [price]="item.price"
+      [img]="item.image"
+      [category]="item.categoryId"
+    ></app-product>
+    }
+  </div>
+</div>
