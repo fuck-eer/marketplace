@@ -3,7 +3,7 @@ import { User } from '../types/User';
 import { HttpClient } from '@angular/common/http';
 import { v4 as uuidv4 } from 'uuid';
 import { Router } from '@angular/router';
-import { BehaviorSubject, of } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })

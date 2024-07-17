@@ -1,10 +1,13 @@
 <section class="headerContainer">
   <div class="header">
     <h1>{{ title }}</h1>
+    <p class="tagline">Your One Stop Shop</p>
     @if (showLogout){
     <div class="details">
       <p>Hey, {{ userName }}</p>
-      <button class="logout" (click)="onLogout()">Logout</button>
+      <div class="logout" (click)="onLogout()">
+        <img src="assets/logout-svgrepo-com.svg" alt="logout" />
+      </div>
     </div>
     }
   </div>

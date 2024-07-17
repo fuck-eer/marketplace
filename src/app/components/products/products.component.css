@@ -10,6 +10,7 @@
 
 .cta {
   display: flex;
+  padding: 0px 20px;
   flex-flow: row;
   align-items: center;
   justify-content: space-between;
@@ -17,7 +18,7 @@
 }
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
   grid-gap: 20px;
 }
 .categories {
@@ -27,4 +28,66 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  cursor: pointer;
+}
+
+.category {
+  font-size: 12px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  border: 1px solid var(--text);
+  color: var(--text);
+}
+
+.sports {
+  border: 1px solid var(--green);
+  color: var(--green);
+}
+.utility {
+  border: 1px solid var(--pink);
+  color: var(--pink);
+}
+.comfort {
+  border: 1px solid var(--yellow);
+  color: var(--yellow);
+}
+.electronics {
+  border: 1px solid var(--purple);
+  color: var(--purple);
+}
+.others {
+  border: 1px solid var(--turquoise);
+  color: var(--turquoise);
+}
+
+.navigator {
+  display: flex;
+  flex-flow: row;
+  align-items: end;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--text);
+  width: 220px;
+  transition: 300ms ease-in-out;
+}
+
+.navlink {
+  font-size: 14px;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+.selectedLink {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: var(--primary);
+  transition: 300ms ease-in-out;
+}
+.separator {
+  font-size: 24px;
+  align-self: center;
+  color: #666666;
+  font-weight: bolder;
+  transition: 300ms ease-in-out;
 }

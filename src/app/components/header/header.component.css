@@ -11,7 +11,7 @@
 }
 
 .header {
-  width: 100%;
+  width: 80%;
   height: 50px;
   background-color: var(--secondary-withBlur);
   color: var(--text);
@@ -32,17 +32,16 @@
   color: var(--text);
 }
 .logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: 300ms ease-in-out;
+  rotate: 180deg;
   cursor: pointer;
-  background-color: var(--error);
-  color: var(--text);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1rem;
 }
-.logout:hover {
-  background-color: var(--error-dark);
+.logout img {
+  width: 24px;
+  height: 24px;
 }
 
 .details {
@@ -52,4 +51,38 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+}
+
+.details p {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.tagline {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--yellow);
+  animation: color-change 5s infinite ease-in-out;
+}
+
+@keyframes color-change {
+  0% {
+    color: var(--yellow);
+  }
+  20% {
+    color: var(--pink);
+  }
+  40% {
+    color: var(--purple);
+  }
+  60% {
+    color: var(--green);
+  }
+  80% {
+    color: var(--turquoise);
+  }
+  100% {
+    color: var(--yellow);
+  }
 }

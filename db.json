@@ -24,6 +24,11 @@
       "id": "f0919148-b39e-4bb7-83ff-2d641a390416",
       "name": "Ashish",
       "password": "Ashish123"
+    },
+    {
+      "id": "b270652a-4978-4e54-8da8-9072ad80a663",
+      "name": "userDemo",
+      "password": "demo123"
     }
   ],
   "products": [

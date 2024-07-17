@@ -1,11 +1,38 @@
 <div class="productsContainer">
   <div class="cta">
-    <div>
-      <p>All Products</p>
+    <div class="navigator">
+      <p
+        class="navlink"
+        [ngClass]="{ selectedLink: !showUserProducts }"
+        (click)="onUserClick(false)"
+      >
+        All Products
+      </p>
+      <p class="navlink separator">|</p>
+      <p
+        class="navlink"
+        [ngClass]="{ selectedLink: showUserProducts }"
+        (click)="onUserClick(true)"
+      >
+        My Products
+      </p>
     </div>
     <div class="categories">
       @for(category of categories; track category.id) {
-      <p>{{ category.name }}</p>
+      <p
+        (click)="onCategoryClick(category.id)"
+        [ngClass]="{
+          category: true,
+          sports: category.id === 'sports' && selectedCategory === 'sports',
+          utility: category.id === 'utility' && selectedCategory === 'utility',
+          comfort: category.id === 'comfort' && selectedCategory === 'comfort',
+          electronics:
+            category.id === 'electronics' && selectedCategory === 'electronics',
+          others: category.id === 'others' && selectedCategory === 'others'
+        }"
+      >
+        {{ category.name }}
+      </p>
       }
     </div>
   </div>
